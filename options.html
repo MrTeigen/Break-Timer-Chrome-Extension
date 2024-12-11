@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Break Timer</title>
+        <link rel="stylesheet" href="options.css">
+    </head>
+    <body>
+        <button id="theme-toggle">🌙</button>
+        <h1>Break Timer Options</h1>
+        <div class="input-div">
+            <h2 id="time">Time:</h2>
+            <input id="time-input" type="number" placeholder="Minutes before notified">
+        </div>
+        
+        <div class="audioplayer">
+            <h2 id="audio">Audio:</h2>
+            <select id="audio-select">
+                <option value="mute">Muted</option>
+                <option value="Audio/notification1.mp3">Notification 1</option>
+                <option value="Audio/notification2.mp3">Notification 2</option>
+                <option value="Audio/notification3.mp3">Notification 3</option>
+                <option value="Audio/notification4.mp3">Notification 4</option>
+                <option value="Audio/notification5.mp3">Notification 5</option>
+                <option value="Audio/notification6.mp3">Notification 6</option>
+                <option value="Audio/notification7.mp3">Notification 7</option>
+            </select>
+            <button id="play-btn">Play</button>
+        </div>
+
+
+        <button id="save-btn">Save</button>        
+        <audio id="notification-sound" src="audio.wav" preload="auto"></audio>
+    </body>
+    <script src="options.js"></script>
+</html>
+
+
+
+
+
+<!--
+Make this page work with darkmode as well.
+-->

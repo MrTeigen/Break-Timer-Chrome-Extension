@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: #f0f0f0;
+}
+
+/* .input-div {
+    display: flex;
+    align-items: center;
+    width: 1%;
+    margin: 10px 0;
+} */
+
+.input-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .input-div {
+    background-color: #444;
+    border-color: #555;
+    color: #f0f0f0;
+}
+
+.input-div h2 {
+    margin: 0 10px 0 0;
+    flex: 1;
+    text-align: right;
+    color: #333;
+}
+
+body.dark-mode .input-div h2 {
+    color: #f0f0f0;
+}
+
+h2 {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.input-div input {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .input-div input {
+    background-color: #555;
+    border-color: #666;
+    color: #f0f0f0;
+}
+
+.input-div input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+body.dark-mode .input-div input:focus {
+    border-color: #4CAF50;
+}
+
+#save-btn {
+    display: block;
+    width: 25%;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#save-btn:hover {
+    background-color: #45a049;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #f0f0f0;
+}
+
+button#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.attribution-div {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+.attribution-div a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.attribution-div a:hover {
+    text-decoration: underline;
+}
+
+.audioplayer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .audioplayer {
+    background-color: #444;
+    border-color: #555;
+    color: #f0f0f0;
+}
+
+.audioplayer h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+body.dark-mode .audioplayer h2 {
+    color: #f0f0f0;
+}
+
+#audio-select {
+    flex: 1;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #audio-select {
+    background-color: #555;
+    border-color: #666;
+    color: #f9f9f9;
+}
+
+#audio-select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+body.dark-mode #audio-select:focus {
+    border-color: #4CAF50;
+}
